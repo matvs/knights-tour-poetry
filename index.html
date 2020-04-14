@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Knights tour poetry</title>
+    <script src="js/index.js"></script>
+    <style>
+        body {
+            background: #d2d4dc;
+        }
+
+        .startButton {
+            padding: 14px;
+            font-size: 20px;
+            border: 3px solid #ffffff;
+            background: #0392cf;
+            color: #ffff;
+            font-weight: bold;
+            outline: none;
+        }
+
+        .startButton:hover {
+            background-color: #0eadf1;
+        }
+
+        .startButton:active {
+            transform: translateY(2px);
+        }
+
+        #canvas {
+            border: 6px solid black;
+            float: left;
+            margin-right: 10px;
+            background: #ffffff;
+        }
+
+        #poem {
+            font-size: 24px;
+            background: white;
+            text-align: center;
+            padding: 20px 0;
+            border: 5px dashed #cccccc;
+            border-radius: 100px;
+            height: 225px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="640" height="640">
+        Your browser does not support canvas.
+    </canvas>
+    <button class="startButton" onclick="Game.start()">Start again</button>
+    <p id="poem"></p>
+    <img width="600" src="assets/img/zadanie_konikowe.jpg">
+</body>
+
+</html>
